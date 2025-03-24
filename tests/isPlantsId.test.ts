@@ -2,9 +2,7 @@
 const helpers = require('../src/ts/base/helpers');
 
 test('check 1', () => {
-  // should be `...toBe(true)`;
-  // intentionally breaking this test to see if github workflow `run test` will fail
-  expect(helpers.isPlantsId('1')).toBe(false);
+  expect(helpers.isPlantsId('1')).toBe(true);
 });
 
 test('check 0', () => {
