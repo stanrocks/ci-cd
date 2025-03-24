@@ -16,7 +16,7 @@ module.exports = {
   devtool,
   entry: './src/index.ts',
   output: {
-    path: 'invalid\/path',
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     clean: true,
     filename: '[name].[contenthash].js',
