@@ -1,5 +1,5 @@
-@use "../../abstracts/mixins";
-@use "../../abstracts/variables";
+@use '../../abstracts/mixins';
+@use '../../abstracts/variables';
 
 .range {
   width: 100%;
@@ -31,8 +31,8 @@
     input {
       position: absolute;
       width: 100%;
-      height: 6px;
-      top: -6px;
+      height: 24px;
+      top: -24px;
       background: none;
       pointer-events: none;
       appearance: none;
@@ -41,9 +41,9 @@
   }
 
   input[type='range']::-webkit-slider-thumb {
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
     background: variables.$green-medium;
     pointer-events: auto;
     -webkit-appearance: none;
@@ -52,17 +52,17 @@
 }
 
 .slider {
-  height: 6px;
+  height: 24px;
   position: relative;
   background: variables.$grey-light;
-  border-radius: 6px;
+  border-radius: 24px;
 
   &__progress {
     height: 100%;
     left: 0%;
     right: 0%;
     position: absolute;
-    border-radius: 6px;
+    border-radius: 24px;
     background: variables.$green-medium;
   }
 }
