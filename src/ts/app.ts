@@ -1,6 +1,6 @@
 import Cart from './components/cart';
 import Router from './router';
-some syntax error (for lint to fail)
+
 class App {
   public cart: Cart;
   static router: Router;
